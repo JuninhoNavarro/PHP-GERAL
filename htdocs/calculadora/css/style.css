@@ -1,0 +1,56 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column; /*assim o botão voltar fica embaixo*/
+    background: #f2f2f2;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.calculadora { /*container da calculadora*/
+    background: rgb(43, 41, 41);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+h1 {
+    text-align: center;
+    color: rgb(13, 255, 13);
+}
+
+.display { /* visor onde aparece os numeros*/
+    width: 100%;
+    height: 30px;
+    font-size: 22px;
+    text-align: right;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    margin: 5px;
+    cursor: pointer;
+    background: rgb(75, 70, 70);
+    color: greenyellow;
+}
+
+.voltar {
+    width: 150px;
+    height: 50px;
+    font-size: 30px;
+    margin: 10px;
+    cursor: pointer;
+    background: rgb(45, 45, 49);
+    border-radius: 10px;
+}
+
+.voltar:hover {
+    background-color: rgb(86, 92, 86);
+    color: rgb(105, 238, 93);
+    transition: 150ms;
+}

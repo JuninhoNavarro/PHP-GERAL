@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 7px;
+    margin: 7px;
+}
+
+button {
+    padding: 5px;
+    margin: 5px;
+    width: 150px;
+    height: 50px;
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.5;
+    background: rgb(3, 70, 136);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.5;
+}
+
+button:hover {
+    background: rgb(78, 147, 216);
+    color: black;
+}
