@@ -1,0 +1,1 @@
+Este trabalho foi realizado com o objetivo de repor uma atividade perdida devido à ausência e, ao mesmo tempo, serviu como revisão dos principais conteúdos que serão cobrados na prova, contribuindo para o reforço do aprendizado.

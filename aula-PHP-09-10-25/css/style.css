@@ -1,0 +1,115 @@
+/* background-color -cor de fundo
+color - cor do texto
+padding - gordura do elemento
+border-raddius - arredondamento das bordas
+width - largura
+font-size - tamanho da fonte
+tag:hover - qnd passa o mause acontece alguma coisa
+*/
+
+/*seleciona todos os arquivos*/
+* {
+    padding: 0; /*zera o pedding(espaçamento externo)*/
+    margin: 0; /*zera o margin(espaçamento internp)*/
+    box-sizing: border-box; /**/
+    font-family: Arial, Helvetica, sans-serif; /*escolhe as possiveis fontes para a pagina*/
+}
+
+
+.container { /*class container*/
+    height: 100vh; /*devine a altura*/ 
+    width: 100vw; /*devine a largura*/ 
+    display: flex;  /* deixa os elementos filhos flexiveis*/
+    align-items: center; /*alinha ao centro da pagina (na horizontal)*/
+    justify-content: center; /*alinha ao centro da pagina (na vertical)*/
+    flex-direction: column; /*deixa os itens em colunas*/
+    background-color: #1c1c1e; /*cor de fundo*/
+    color: #f5f5f7; /*cor do texto*/
+}
+
+form { /*TAG (form)*/
+    display: flex; /* deixa os elementos filhos flexiveis*/
+    flex-direction: column; /*deixa os itens em colunas*/
+    padding: 20px; /**/
+    border-radius: 20px; /*arredonda as bordas */
+    background: #2a2a2c;
+    width: 30%;
+}
+
+
+h1 {
+    font-size: 3.5em;
+    margin-bottom: 30px;
+    color: limegreen;
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 30px;
+    font-size: 3.5rem;
+}
+
+label {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: greenyellow;
+    margin-top: 10px;
+}
+
+label [for="chute"]{ /*só o label que tiver o for="chute" vai receber margin-top*/
+    margin-top: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    background-color: transparent;
+    color: lawngreen;
+}
+
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+
+    font-size: 1.3rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none; 
+    cursor: pointer; /*quando o mause passar ele fica como pointer*/
+    font-weight: bold;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+    transition: ease-in-out 100ms;
+}
+
+.btn-enviar {
+    background-color: limegreen;
+    margin-top: 10px;
+    color:#f5f5f7
+}
+
+.btn-limpar {
+    background-color: #c9c9cc;
+    margin-top: 20px;
+}
+
+/*responsivo para telas menores*/
+@media (max-width: 1020px){
+    form{
+        width: 50%;
+    }
+}
+
+@media (max-width: 800px) {
+    form {
+        width: 90%;
+    }
+}

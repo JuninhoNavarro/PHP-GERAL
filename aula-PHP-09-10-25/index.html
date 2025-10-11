@@ -1,0 +1,51 @@
+<!-- saber essa estrutura para a prova -->
+<!DOCTYPE html> <!-- fala que é um documento html -->
+<html lang="pt-br"> <!-- define a linguagem portugues-brasil -->
+
+<head> <!-- cabecalho da pagina, onde o usuario não tem acesso-->
+    <meta charset="UTF-8"> <!-- -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 09/10/25 PHP </title>
+<!-- escrever (link:css) cria a estrutura, para linkar o css-->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <?php "Olá, Mundo"; ?>
+    
+<!--
+    <div>
+        <p>Github (INIT, ADD, COMMIT, PUSH E PULL) = o que cada um faz ou uma sequencia (questao de alternativa)</p>
+        <p>(Estrutura de Pastas, Estrutura do arquivo) = (pastas e arquivos)</p>
+        <p>HTML, TAGs mais utilizadas, principais propriedades do CSS.(li,ol tambem)</p>
+        <p>Bootstrap Classes do formulário</p>
+        <p>Ambiente Cliente, Servidor</p>
+        <p>Formulário (dentro de um form (action e method)- label e imput)</p>
+        <p>Variaveis (como declarar)</p>
+        <p>Envio e recebimento de dados com GET e POST (enviar formulario por html e receber com PHP código escrito)</p>
+        <p>Validação com IF e isset()</p>
+        <p>IF/Else</p>
+    </div>
+-->
+    <!-- tudo isso vai cair na prova-->
+    <div class="container">
+        <h1>Revisão Para Prova</h1>
+        <p>Acerte o número e veja o money cair na conta</p>
+
+        <form action="validar.php" method="POST">
+            <label for="nome">Nome: </label>
+            <input type="text" id="nome" name="nome" class="input-form"> <!-- precisa ter o name="" se não, não serve pro php -->
+
+            <label for="chute">Escolha um número de 0 ao 10</label>
+            <input type="number" id="chute" name="chute" class="input-form"> <!--class ele vai cobrar -->
+
+            <button type="reset" class="btn btn-limpar">Limpar</button>
+            <button type="submit" class="btn btn-enviar">Chutar</button>
+        </form>
+    </div>
+
+<!-- escrever (script:src) cria a estrutura, para linkar o script -->
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

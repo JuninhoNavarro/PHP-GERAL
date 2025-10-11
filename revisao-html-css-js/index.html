@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Revisão HTML, CSS E JS</title>
+        <meta charset="utf-8">
+        <style>
+            h1 {
+                /* color: black; */
+                margin-bottom: 20px;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            }
+
+            #frase {
+                font-size: 20px;
+                margin-bottom: 40px;
+            }
+
+            button {
+                padding: 15px 30px;
+                background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+                color: white;
+                border-radius: 50px;
+                border: none;
+                cursor: pointer;
+                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+                font-size: 20px;
+            }
+
+            button:hover {
+                transform: translate(-3px) scale(1.05);
+                box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+            }
+
+            .pagina {
+                color: white;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                text-align: center;
+                overflow: hidden;
+                /* Isso é um comentário */
+            }
+
+            .particula {
+                position: absolute;
+                width: 4px;
+                height: 4px;
+                background: rgba(255, 255, 255, 0.8);
+                border-radius: 50%;
+                pointer-events: none;
+                animation: flutuar 4s ease-in-out infinite;
+            }
+
+            /* Cria a animação "flutuar" e especifica o que ele vai fazer a cada % de tempo */
+            @keyframes flutuar {
+
+            }
+
+        </style>
+    </head>
+
+    <body class="pagina">
+        <h1 style="font-size: 50px;"> <span> Bem vindos </span> a revisão de HTML!</h1>
+        <p id="frase">Vamos aprender sobre o potencial do <b> HTML, CSS E JS. </b> </p>
+        <h1>Vamos ver como tudo funciona!</h1>
+        <button id="botaoMagia">Clique para ver a <strong> Magia! </strong></button>
+
+        <script>
+            // Buscar o elemento no HTML e colocar ele na variavel
+            let botao = document.getElementById('botaoMagia');
+
+            function criarParticulas() {
+            // Limpar partículas antigas
+            const particulasAntigas = document.querySelectorAll('.particula');
+            particulasAntigas.forEach(p => p.remove());
+
+            // Criar novas partículas
+            for(let i = 0; i < 30; i++) {
+                const particula = document.createElement('div');
+                particula.className = 'particula';
+                particula.style.top = Math.random() * 100 + 'vh';
+                particula.style.left = Math.random() * 100 + 'vw';
+                particula.style.animationDelay = Math.random() * 2 + 's';
+                particula.style.animationDuration = (Math.random() * 3 + 2) + 's';
+                document.body.appendChild(particula);
+            }
+
+            // Remover partículas após animação
+            setTimeout(() => {
+                document.querySelectorAll('.particula').forEach(p => p.remove());
+            }, 6000);
+        }
+
+        botao.addEventListener('click', function(e){
+            criarParticulas();
+        });
+
+        </script>
+    </body>
+
+    
+</html>
