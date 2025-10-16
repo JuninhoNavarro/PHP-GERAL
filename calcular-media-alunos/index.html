@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculando Média dos Alunos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<div class="container">
+    <h1>Calculando a Média dos Alunos</h1>
+    <form action="receber.form.php" method="post">
+    <div class="mb-3">
+        <label for="nome" class="form-label">Digite o nome do aluno: </label>
+        <input type="text" name="nome" id="nome" class="form-control">
+    </div>
+    
+    <div class="mb-3">
+        <label for="nota1" class="form-label">Digite a nota da Prova1: </label>
+        <input type="number" name="nota1" id="nota1" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label for="nota2" class="form-label">Digite a nota da Prova2: </label>
+        <input type="number" name="nota2" id="nota2" class="form-control">
+    </div>
+
+    <div>
+        <a href="../index.php"><button>Voltar</button></a>
+        <button type="reset" class="btn btn-limpar">Limpar</button>
+        <button type="submit" class="btn btn-enviar">Enviar</button>
+    </div>
+
+    </form>
+</div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
