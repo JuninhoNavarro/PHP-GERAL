@@ -2,7 +2,7 @@
 //para parar o servidor e o terminal é so dar Crtl + C
 
 //echo $texto = "Olá, mundo";
-$titulo = "Esse é o Texto da variável título";
+//$titulo = "Esse é o Texto da variável título";
 // echo $titulo;
 
 //VALIDA se os dados estão sendo enviados por POST
@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // se post['chute']
     $chute = empty($_POST['chute']) ? -1 : $_POST['chute'];
 
-    // se (chute for menor que 0 ou maior que 10) faça -> chute="numero invalido"
+    // se (chute for menor que 0 ("||" = "ou") maior que 10) faça -> chute="numero invalido"
     if ($chute < 0 || $chute > 10) {
         $chute = "Numero inválido!";
     }
@@ -27,7 +27,7 @@ $pSorteado
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
