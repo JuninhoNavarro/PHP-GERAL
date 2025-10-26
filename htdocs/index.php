@@ -10,11 +10,11 @@
 
 <body>
     <div class="container">
-        
+            <a href="/reposicao/pagina.php"><button>Revisão</button></a>
             <a href="/operacao/index.php"><button>Operações</button></a>
             <a href="/calculadora/index.php"><button>Calculadora</button></a>
             <a href="/quiz/index.php"><button>Quiz</button></a> 
-   
+            
     </div>
 </body>
 

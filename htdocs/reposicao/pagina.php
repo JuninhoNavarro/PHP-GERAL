@@ -98,11 +98,14 @@
                 </select>
             </div>
 
+            
+
             <button type="reset" class="btn btn-warning">LIMPAR</button>
 
             <button type="submit" class="btn btn-success">ENVIAR</button>
 
         </form>
+        <a href="/index.php"><button class="btn btn-primary">VOLTAR</button></a>
     </div>
 </body>
 

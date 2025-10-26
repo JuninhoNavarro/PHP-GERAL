@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // se post['chute']
     $chute = empty($_POST['chute']) ? -1 : $_POST['chute'];
 
-    // se (chute for menor que 0 ("||" = "ou") maior que 10) faça -> chute="numero invalido"
+    // se (chute for menor que 0 ou maior que 10) faça -> chute="numero invalido"
     if ($chute < 0 || $chute > 10) {
         $chute = "Numero inválido!";
     }
@@ -27,7 +27,7 @@ $pSorteado
 ?>
 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -37,7 +37,7 @@ $pSorteado
 </head>
 
 <body>
-    <h1> <?= $titulo ?> </h1>
+    <!-- <h1> <?= $titulo ?> </h1> -->
 
     <p>Dados informados:</p>
     <p><br>Nome: <?= $nome ?> </p>

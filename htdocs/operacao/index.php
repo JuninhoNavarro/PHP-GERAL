@@ -38,9 +38,10 @@
             </div>
 
             <button type="reset" class="btn btn-danger">LIMPAR</button>
-            <button type="submit" class="btn btn-primary">ENVIAR</button>
+            <button type="submit" class="btn btn-success">ENVIAR</button>
 
         </form>
+        <a href="/index.php"><button class="btn btn-primary" style="margin-top: 10px;">VOLTAR</button></a>
     </div>
 
 </body>

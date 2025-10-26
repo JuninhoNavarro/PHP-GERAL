@@ -79,6 +79,8 @@
         </select>
          </div>
         <div class="mb-3" style="display: flex; padding: 15px; margin: 15px; justify-content: flex-first; gap: 20px">
+       
+        <a href="/index.php"><button class="btn btn-primary">VOLTAR</button></a>
         <!--Botão de limpar o formulario-->
         <button type="reset" class="btn btn-warning">LIMPAR</button> 
         <!--Botão de enviar o formulario-->
